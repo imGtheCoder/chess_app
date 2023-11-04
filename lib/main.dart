@@ -1,4 +1,6 @@
+import 'package:chess_app/Screens/chessboard.dart';
 import 'package:chess_app/Screens/home_screen.dart';
+import 'package:chess_app/Screens/home_screen_half.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,6 +36,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const HomeScreen(),
+      routes: {
+        '/home': (context) => HomeScreen(),
+        '/homealter': (context) => HomeScreenHalf(),
+      },
     );
   }
 }

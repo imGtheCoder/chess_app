@@ -39,6 +39,13 @@
       "moduleName": "chess_app"
     },
     {
+      "kind": "Import",
+      "name": "sqflite",
+      "printedName": "sqflite",
+      "declKind": "Import",
+      "moduleName": "chess_app"
+    },
+    {
       "kind": "TypeDecl",
       "name": "MainFlutterWindow",
       "printedName": "MainFlutterWindow",
@@ -224,6 +231,13 @@
       "moduleName": "chess_app"
     },
     {
+      "kind": "Import",
+      "name": "sqflite",
+      "printedName": "sqflite",
+      "declKind": "Import",
+      "moduleName": "chess_app"
+    },
+    {
       "kind": "TypeDecl",
       "name": "AppDelegate",
       "printedName": "AppDelegate",
@@ -386,6 +400,13 @@
       "kind": "Import",
       "name": "_Concurrency",
       "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "chess_app"
+    },
+    {
+      "kind": "Import",
+      "name": "sqflite",
+      "printedName": "sqflite",
       "declKind": "Import",
       "moduleName": "chess_app"
     },

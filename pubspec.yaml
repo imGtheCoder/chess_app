@@ -28,6 +28,10 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  intl: ^0.18.1
+  sqflite: ^2.3.0
+  flutter_chess_board: ^1.0.1
+  file_picker: ^6.0.0
   flutter:
     sdk: flutter
 
@@ -59,8 +63,21 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - lib/assets/images/boardGreen.png
+    - lib/assets/images/chess_pieces/blackBishop.png
+    - lib/assets/images/chess_pieces/blackKing.png
+    - lib/assets/images/chess_pieces/blackKnight.png
+    - lib/assets/images/chess_pieces/blackPawn.png
+    - lib/assets/images/chess_pieces/blackQueen.png
+    - lib/assets/images/chess_pieces/blackRook.png
+    - lib/assets/images/chess_pieces/whiteBishop.png
+    - lib/assets/images/chess_pieces/whiteKing.png
+    - lib/assets/images/chess_pieces/whiteKnight.png
+    - lib/assets/images/chess_pieces/whitePawn.png
+    - lib/assets/images/chess_pieces/whiteQueen.png
+    - lib/assets/images/chess_pieces/whiteRook.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

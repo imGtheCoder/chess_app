@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		ME0cAg6cl/bTZmwXEVgMugDccUI=
+		3/ltL16cKpwCSSl51bG07USwI70=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		M6rQcPMxjxteBkqqv5RX5lat3vE=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		VB8Dttzwsjh2PlaYIOq39lCtM9o=
+		a/A6XGNJRGJ3ANK0EYRnQeDMQOM=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -34,11 +34,67 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		1dymr42+ZXcCBOzKEwxOGQwq7kM=
+		EkpW25f0cdSbb/AkkRLhx50ZPS8=
+		</data>
+		<key>flutter_assets/lib/providers/games.pgn</key>
+		<data>
+		eEPVv1X52cJnQdcoL0EcFP3KL0M=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
 		P7bb/oR3EhwqCIH1M6LyTuBIWYU=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/2.0x/brown_board.png</key>
+		<data>
+		3c0ZrouaFNt7xglUBhrE+nCE2mA=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/2.0x/dark_brown_board.png</key>
+		<data>
+		1swbJAWfVLrqwlApfWVs0YdpKFg=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/2.0x/green_board.png</key>
+		<data>
+		7Im+Zyu+QbTu4YN8iJjkLq2nmZw=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/2.0x/orange_board.png</key>
+		<data>
+		lf/SQxUQaNaBra0S/wQfs+oQoL4=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/3.0x/brown_board.png</key>
+		<data>
+		44PINh0cjlrM2XrIwcg8RxGRi6Y=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/3.0x/dark_brown_board.png</key>
+		<data>
+		JAQGDdhBUN6GY/MxVXiQf4bjzvQ=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/3.0x/green_board.png</key>
+		<data>
+		7EYttJfO/kUK11+Gb3YnnP9J/TM=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/3.0x/orange_board.png</key>
+		<data>
+		Eds2fa08rmxxeUe9HZyI/igRryI=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/brown_board.png</key>
+		<data>
+		7NcAggTCYcZ0uLkWrivUpKH8D3o=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/chess_board.png</key>
+		<data>
+		e+Sn2BsFUqcF+7lxoACItuVzaE0=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/dark_brown_board.png</key>
+		<data>
+		+ndjPqI2kOapjdt3JnFQ1sXZC3o=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/green_board.png</key>
+		<data>
+		3OlRpNDaLaNuVMB0L6Whnr+Rnyw=
+		</data>
+		<key>flutter_assets/packages/flutter_chess_board/images/orange_board.png</key>
+		<data>
+		oc3ryvu4BxtOHz/jVSsjsNitn9Y=
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -55,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AK9VrT1vIYmP534P8JLRoc2lLJQbaGDpko1FyK+MCV0=
+			ojPsNlNOi08rgYpIwaUf7RY0gESaOt2TYU0SMqIUo80=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			2Cz/mIwpBx2GhO21eriVQ6u5+fmGxDvWk81rFuWs2Wo=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -76,7 +132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PYeqQdNPbZ/ev3bV41pKJqkRybMiZfqKtOtxp7xBX4=
+			8QzdZuxHFY8B5C4YYz9q3xkBO+iBF3lXuE20QeR4IqU=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -97,7 +153,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pm01sJS2A7XBQ9sV3FF9frgp5N7zGEUCUsHXaSohRJ0=
+			fVRJZz5H/9aVirQ6jgc8KSXxiLanUJWW/zyHjCAPUoU=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/providers/games.pgn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3bolLC3A29eG195SwVj6ysf4BXB2R7HGV76v7BRwt2Y=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -105,6 +168,97 @@
 			<key>hash2</key>
 			<data>
 			x6NX+tjyECiQtyzbbjyY8U2zoZ7GDbJtE+T+k/dzgI0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/2.0x/brown_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WnmpnXoD4pcQgCH8TLMbajBt/4OojR4CrCbpD4GSrxs=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/2.0x/dark_brown_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZPQSQ+ONFnGGg/Nj8O9JcXgjJfwSW15eSy1EAT1TUu4=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/2.0x/green_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BAFfQts8OP+CtB5ZEQMv1+chn9gOlV+zIkMYI/AFjBg=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/2.0x/orange_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QJacaQ7a95JsssoW9zfYS5vI6moXF5IOyf1lNULndTw=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/3.0x/brown_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GycBil2FsxajIKhyq9WO0GJD0OQiR5HYVrO9aZ6XG3c=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/3.0x/dark_brown_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BHk2xYGnyyUYT6FShUihVQX9TRh8Xj4Xw++0soFq1Bo=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/3.0x/green_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u3WCLh/jn9XIoXWnF83HfU97ELJ35OFW57IG8S0YoJQ=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/3.0x/orange_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dwIFDvXLvHeCXZYQBpD6hlJXLzghOibtNevIuwpYNG0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/brown_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IAbkkDEcFfxouml+AxyqjHQitkNrnkzzFGY+2Av8NXQ=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/chess_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NPM1mk+VmqyMwTeqdI6q7q6V8HSp539RRHTb+gGKp/I=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/dark_brown_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sLMHbfVCSrPMqcjN6tQROyWPIP8549rDS/uJ4Mjgm/E=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/green_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ym/cPweutmFtWQZp+tZMo5YJkYSg+atay+l/3y0flCM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_chess_board/images/orange_board.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YzTVHgb4yP0d4/kAKOW5ZjOCglwSwvsQ3ITKZ9RRizk=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>

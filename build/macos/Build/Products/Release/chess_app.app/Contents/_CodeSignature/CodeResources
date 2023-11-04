@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		RG5XqKyN7vvFfxPJt775TvcmJNw=
+		tG+jht0E12xXxrVMk8fCwpVFsck=
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<data>
-		0nRaPiwn2Fi2aHg2uV0VRVduJyI=
+		rWjqACICsB/TLSaoZNcpJ6G0ae0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -23,10 +23,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			G1zY1lZXPmKcvpROYnBbgN/Iw+k=
+			WDXfG0FK5kbIdnJL510Roef7jaE=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"1b5cd8d656573e629cbe944e62705b80dfc8c3e9" or cdhash H"e4e68129841add956836eb1311e197ca7b31c698"</string>
+			<string>cdhash H"5835df1b414ae646c876724be75d11a1e7fb8da1" or cdhash H"ac2bbe66f77e5fd268c0544abbba018463162e91"</string>
+		</dict>
+		<key>Frameworks/FMDB.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			CZ0aNcJyc7PvEdXUF/SdVjslbI0=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"c9767f1e84295b770e67ca83a4f1cff5fb357d80" or cdhash H"099d1a35c27273b3ef11d5d417f49d563b256c8d" or cdhash H"1e3f08545545e9b5e128c67878468f1e7de5566d" or cdhash H"63389e9c1250a29c4cb7237d87f238e9017caaac"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
@@ -190,6 +199,15 @@
 			<key>requirement</key>
 			<string>cdhash H"bf8a15081175ba4289f2a4455dcf9d85f4d2a4d9" or cdhash H"4f0cbb413e54d1c688556c58421372c33e684a8e"</string>
 		</dict>
+		<key>Frameworks/sqflite.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			SdpGonLSQyJnbjtnFXfVNWwxPWM=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"49da46a272d24322676e3b671577d5356c313d63" or cdhash H"a06f6cc3b622701f94ca3c73ebe57997c3c46570"</string>
+		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
 			<key>hash2</key>
@@ -201,14 +219,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sSqKmXimAUGy2c46hUQrzTmXNzvXHt+JeGPzMx7zuHk=
+			ryVSTEliKGD1rvhXMeUCZBvh6q+NX/2tW5X4v72ycBk=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QnrZDiflFD2CWw91TcjV6/SGH5YNB+z/6yF2FtX2LvE=
+			u32TP6ER+3+crWuqi2oSAB6mwEeOizXlzVT1sMIvcn8=
 			</data>
 		</dict>
 	</dict>
