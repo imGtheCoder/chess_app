@@ -1,0 +1,15 @@
+com.example.chess_app-jetified-window-1.0.0-beta04-0 /Users/imanol/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/res
+com.example.chess_app-jetified-annotation-experimental-1.1.0-1 /Users/imanol/.gradle/caches/transforms-3/6c0c163cc77ae6c91f9f7dfcd179c29c/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.chess_app-core-1.6.0-2 /Users/imanol/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/res
+com.example.chess_app-jetified-window-java-1.0.0-beta04-3 /Users/imanol/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.chess_app-debug-4 /Users/imanol/Documents/GitHub/chess_app/android/app/src/debug/res
+com.example.chess_app-main-5 /Users/imanol/Documents/GitHub/chess_app/android/app/src/main/res
+com.example.chess_app-pngs-6 /Users/imanol/Documents/GitHub/chess_app/build/app/generated/res/pngs/debug
+com.example.chess_app-resValues-7 /Users/imanol/Documents/GitHub/chess_app/build/app/generated/res/resValues/debug
+com.example.chess_app-rs-8 /Users/imanol/Documents/GitHub/chess_app/build/app/generated/res/rs/debug
+com.example.chess_app-mergeDebugResources-9 /Users/imanol/Documents/GitHub/chess_app/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.chess_app-mergeDebugResources-10 /Users/imanol/Documents/GitHub/chess_app/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.chess_app-merged_res-11 /Users/imanol/Documents/GitHub/chess_app/build/app/intermediates/merged_res/debug
+com.example.chess_app-packaged_res-12 /Users/imanol/Documents/GitHub/chess_app/build/file_picker/intermediates/packaged_res/debug
+com.example.chess_app-packaged_res-13 /Users/imanol/Documents/GitHub/chess_app/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/debug
+com.example.chess_app-packaged_res-14 /Users/imanol/Documents/GitHub/chess_app/build/sqflite/intermediates/packaged_res/debug
