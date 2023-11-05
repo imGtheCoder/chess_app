@@ -35,15 +35,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     DatabaseHelper.getAllGames().then((value) {
       value == null ? chessGames = [] : chessGames = value;
+      
     });
 
     var bigDataTable = Padding(
       padding: const EdgeInsets.all(8.0),
       child: DataTable2(
           showCheckboxColumn: false,
-          //headingTextStyle: const TextStyle(fontSize: 15, color: Colors.black),
-          //dataTextStyle: const TextStyle(
-          //fontSize: 15, color: Color.fromARGB(255, 90, 82, 82)),
           columnSpacing: 10,
           decoration: const BoxDecoration(color: Colors.white),
           sortColumnIndex: 1,
@@ -92,6 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
               .map((chessGame) => DataRow2(
                       onSelectChanged: (value) {
                         controller.loadPGN(chessGame.moves);
+                        print(chessGame.moves);
                         moves = controller.getSan().cast<String>();
                         i = 0;
                         setState(() {
@@ -100,29 +99,30 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       cells: [
                         DataCell(
-                          Text(DateFormat("yyyy.MM.dd")
-                              .format(DateTime.parse(chessGame.date))),
+                          // Text(DateFormat("yyyy.MM.dd")
+                          //     .format(DateTime.parse(chessGame.date))),
+                          Text(chessGame.date),
                         ),
                         DataCell(
-                          Text(chessGame.whitePlayerName),
+                          Text(chessGame.white),
                         ),
                         DataCell(
-                          Text(chessGame.whitePlayerELO.toString()),
+                          Text(chessGame.whiteElo.toString()),
                         ),
                         const DataCell(
                           Text('-'),
                         ),
                         DataCell(
-                          Text(chessGame.blackPlayerName),
+                          Text(chessGame.black),
                         ),
                         DataCell(
-                          Text(chessGame.blackPlayerELO.toString()),
+                          Text(chessGame.blackElo.toString()),
                         ),
                         DataCell(
                           Text(chessGame.result),
                         ),
                         DataCell(
-                          Text(chessGame.movesCount.toString()),
+                          Text(chessGame.moves.length.toString()),
                         ),
                         DataCell(
                           Text(chessGame.timeControl),
@@ -178,23 +178,24 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     cells: [
                       DataCell(
-                        Text(DateFormat("yyyy.MM.dd")
-                            .format(DateTime.parse(chessGame.date))),
+                        // Text(DateFormat("yyyy.MM.dd")
+                        //     .format(DateTime.parse(chessGame.date))),
+                        Text(chessGame.date)
                       ),
                       DataCell(
-                        Text(chessGame.whitePlayerName),
+                        Text(chessGame.white),
                       ),
                       DataCell(
-                        Text(chessGame.whitePlayerELO.toString()),
+                        Text(chessGame.whiteElo.toString()),
                       ),
                       const DataCell(
                         Text('-'),
                       ),
                       DataCell(
-                        Text(chessGame.blackPlayerELO.toString()),
+                        Text(chessGame.blackElo.toString()),
                       ),
                       DataCell(
-                        Text(chessGame.blackPlayerName),
+                        Text(chessGame.black),
                       ),
                       DataCell(
                         Text(chessGame.result),
@@ -391,23 +392,35 @@ class _HomeScreenState extends State<HomeScreen> {
                                       onPressed: () {
                                         DatabaseHelper.addGame(
                                           ChessGame(
-                                              date: DateTime.now()
-                                                  .toIso8601String(),
-                                              whitePlayerName: 'John',
-                                              whitePlayerELO: 2350,
-                                              blackPlayerName: 'Nick',
-                                              blackPlayerELO: 1235,
-                                              result: '1-0',
-                                              movesCount: 40,
-                                              moves:
-                                                  '1. e4 e5 2. Nf3 Bd6 3. d4 Nc6 4. d5 Nb4 5. a3 Na6 6. Bxa6 bxa6 7. Nc3 Nf6 8. O-O Bc5 9. b4 Bd6 10. Re1 Bb7 11. Bg5 h6 12. Bxf6 Qxf6 13. b5 O-O 14. Qd3 Qf4 15. bxa6 Bc8 16. Qc4 h5 17. Ne2 Qf6 18. a4 Re8 19. Rab1 h4 20. h3 Be7 21. Qxc7 Bxa6 22. Nxe5 Bd6 23. Nxd7 Bxc7 24. Nxf6+ gxf6 25. Nd4 Ba5 26. Red1 Rxe4 27. d6 Rd8 28. Nc6 Rd7 29. Nxa5 Rxa4 30. Nc6 f5 31. Ne7+ Rxe7 32. dxe7 Re4 33. Rb8+ Kg7 34. e8=Q Re6 35. Qh8+ Kg6 36. Rg8# 1-0',
-                                              timeControl: 'timeCtrl',
-                                              timeClass: 'TimeClass',
-                                              wAccuracy: 'WACC',
-                                              bAccuracy: 'BACC',
-                                              wCPL: 'wCpl',
-                                              bCPL: 'bCPL'),
+                                            //gameID: 10000,
+                                            event: 'r',
+                                            site: 'r',
+                                            round: 'r',
+                                            currentPosition: 'r',
+                                            timeZone: 'r',
+                                            eco: 'r',
+                                            ecoUrl: 'r',
+                                            utcDate: 'r',
+                                            utcTime: 'r',
+                                            termination: 'r',
+                                            startTime: 'r',
+                                            endTime: 'r',
+                                            endDate: 'r',
+                                            link: 'r',
+                                            rawPGN: 'r',
+                                            date: DateTime.now()
+                                                .toIso8601String(),
+                                            white: 'John',
+                                            whiteElo: 2350.toString(),
+                                            black: 'Nick',
+                                            blackElo: 1235.toString(),
+                                            result: '1-0',
+                                            moves:
+                                                '1. e4 e5 2. Nf3 Bd6 3. d4 Nc6 4. d5 Nb4 5. a3 Na6 6. Bxa6 bxa6 7. Nc3 Nf6 8. O-O Bc5 9. b4 Bd6 10. Re1 Bb7 11. Bg5 h6 12. Bxf6 Qxf6 13. b5 O-O 14. Qd3 Qf4 15. bxa6 Bc8 16. Qc4 h5 17. Ne2 Qf6 18. a4 Re8 19. Rab1 h4 20. h3 Be7 21. Qxc7 Bxa6 22. Nxe5 Bd6 23. Nxd7 Bxc7 24. Nxf6+ gxf6 25. Nd4 Ba5 26. Red1 Rxe4 27. d6 Rd8 28. Nc6 Rd7 29. Nxa5 Rxa4 30. Nc6 f5 31. Ne7+ Rxe7 32. dxe7 Re4 33. Rb8+ Kg7 34. e8=Q Re6 35. Qh8+ Kg6 36. Rg8# 1-0',
+                                            timeControl: '',
+                                          ),
                                         );
+                                        
                                         setState(() {
                                           DatabaseHelper.getAllGames()
                                               .then((value) {

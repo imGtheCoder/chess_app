@@ -6,39 +6,39 @@ import '../providers/chess_game.dart';
 
 class DatabaseHelper {
   static const int _version = 1;
-  static const String _dbName = "ChessGames.db";
+  static const String _dbName = "chessapp.db";
 
   static Future<Database> _getDb() async {
     return openDatabase(join(await getDatabasesPath(), _dbName),
         onCreate: (db, version) async => await db.execute(
-            'CREATE TABLE ChessGames(date TEXT PRIMARY KEY, whitePlayerName TEXT NOT NULL, whitePlayerELO INTEGER NOT NULL, blackPlayerName TEXT NOT NULL, blackPlayerELO INTEGER NOT NULL, result TEXT NOT NULL,movesCount INTEGER NOT NULL , moves TEXT NOT NULL, timeControl TEXT NOT NULL, timeClass TEXT NOT NULL, wAccuracy TEXT NOT NULL, bAccuracy TEXT NOT NULL, wCPL TEXT NOT NULL, bCPL TEXT NOT NULL)'),
+            'CREATE TABLE games (GameID INTEGER PRIMARY KEY AUTOINCREMENT, Event TEXT, Site TEXT, Date TEXT, Round TEXT, White TEXT, Black TEXT, Result TEXT, CurrentPosition TEXT, Timezone TEXT, ECO TEXT, ECOUrl TEXT, UTCDate TEXT, UTCTime TEXT, WhiteElo TEXT, BlackElo TEXT, TimeControl TEXT, Termination TEXT, StartTime TEXT, EndDate TEXT, EndTime TEXT, Link TEXT, Moves TEXT, RawPGN TEXT)'),
         version: _version);
   }
 
   static Future<int> addGame(ChessGame game) async {
     final db = await _getDb();
-    return await db.insert('ChessGames', game.toJson(),
+    return await db.insert('games', game.toJson(),
         conflictAlgorithm: ConflictAlgorithm.replace);
   }
 
   static Future<int> updateGame(ChessGame game) async {
     final db = await _getDb();
-    return await db.update('ChessGames', game.toJson(),
-        where: 'date = ?',
-        whereArgs: [game.date],
+    return await db.update('games', game.toJson(),
+        where: 'GameID = ?',
+        whereArgs: [game.gameID],
         conflictAlgorithm: ConflictAlgorithm.replace);
   }
 
   static Future<int> deleteGame(ChessGame game) async {
     final db = await _getDb();
     return await db
-        .delete('ChessGames', where: 'date = ?', whereArgs: [game.date]);
+        .delete('games', where: 'GameID = ?', whereArgs: [game.gameID]);
   }
 
   static Future<List<ChessGame>?> getAllGames() async {
     final db = await _getDb();
 
-    final List<Map<String, dynamic>> maps = await db.query('ChessGames');
+    final List<Map<String, dynamic>> maps = await db.query('games');
 
     if (maps.isEmpty) {
       return null;

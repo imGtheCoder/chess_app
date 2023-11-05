@@ -63,19 +63,19 @@ class _HomeScreenHalfState extends State<HomeScreenHalf> {
                             Text(chessGame.date.toString()),
                           ),
                           DataCell(
-                            Text(chessGame.whitePlayerName),
+                            Text(chessGame.white),
                           ),
                           DataCell(
-                            Text(chessGame.whitePlayerELO.toString()),
+                            Text(chessGame.whiteElo.toString()),
                           ),
                           const DataCell(
                             Text('-'),
                           ),
                           DataCell(
-                            Text(chessGame.blackPlayerName),
+                            Text(chessGame.black),
                           ),
                           DataCell(
-                            Text(chessGame.blackPlayerELO.toString()),
+                            Text(chessGame.blackElo.toString()),
                           ),
                           DataCell(
                             Text(chessGame.result),

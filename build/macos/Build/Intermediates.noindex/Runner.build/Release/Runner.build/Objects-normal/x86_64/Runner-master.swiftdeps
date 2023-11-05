@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
 options: "e25b3887bd354c0bd83beab41084da1c51c4f3b5f0f1c309d043c70cbd562408"
-build_start_time: [1699128619, 375339984]
-build_end_time: [1699128620, 275447845]
+build_start_time: [1699198953, 277000904]
+build_end_time: [1699198954, 987019062]
 inputs:
-  "/Users/imanol/Documents/GitHub/chess_app/macos/Flutter/GeneratedPluginRegistrant.swift": [1699128556, 633706569]
+  "/Users/imanol/Documents/GitHub/chess_app/macos/Flutter/GeneratedPluginRegistrant.swift": [1699198882, 886576652]
   "/Users/imanol/Documents/GitHub/chess_app/macos/Runner/AppDelegate.swift": [1671105058, 0]
   "/Users/imanol/Documents/GitHub/chess_app/macos/Runner/MainFlutterWindow.swift": [1689414019, 751974105]
