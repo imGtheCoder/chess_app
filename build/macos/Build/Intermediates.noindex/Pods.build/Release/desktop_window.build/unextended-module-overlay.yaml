@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/imanol/Documents/GitHub/chess_app/build/macos/Build/Products/Release/desktop_window/desktop_window.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/imanol/Documents/GitHub/chess_app/build/macos/Build/Intermediates.noindex/Pods.build/Release/desktop_window.build/unextended-module.modulemap",
+    }]
+  }]
+}

@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		AFMZ3kvKOXSKy3ggt0ygRaq6g4g=
+		tG+jht0E12xXxrVMk8fCwpVFsck=
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<data>
-		cnMpXWf4AE9SgmU9XpvK2S6qVUo=
+		e1Zo2FmChnRrja0I5rksd+DEqII=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -23,19 +23,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			ICKJ3yaZksUHqI91qURHb6aJ8rU=
+			+dyQHFlb4E+NGPyzz/O8POIetiE=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"202289df269992c507a88f75a944476fa689f2b5"</string>
+			<string>cdhash H"f9dc901c595be04f8d18fcb3cff3bc3ce21eb621"</string>
 		</dict>
 		<key>Frameworks/FMDB.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			8gH9+HDl7Isw8U1Hlhib21OiQp0=
+			vRXOeTpjUn3VpC6SZ6YUdIUqzEs=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"4f34de81ab7b225601970bf5e62309d164962e24" or cdhash H"f201fdf870e5ec8b30f14d4796189bdb53a2429d"</string>
+			<string>cdhash H"3e5074699910f2d01d3577790103a7dd12630a56" or cdhash H"bd15ce793a63527dd5a42e9267a61474852acc4b"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
@@ -45,6 +45,15 @@
 			</data>
 			<key>requirement</key>
 			<string>cdhash H"fb8a81a8daecabe66bad9521c5872b194ef6059f"</string>
+		</dict>
+		<key>Frameworks/desktop_window.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			ebg+rbH4Q3lh+fTQMZEEfeL82iU=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"79b83eadb1f8437961f9f4d03191047de2fcda25"</string>
 		</dict>
 		<key>Frameworks/libswiftAppKit.dylib</key>
 		<dict>
@@ -203,10 +212,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			uIyY35EOaMO/0/Ma6uFcI1wFoeg=
+			xsloqcB2scqpg00E9CYVuCJqYF0=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"b88c98df910e68c3bfd3f31aeae15c235c05a1e8"</string>
+			<string>cdhash H"c6c968a9c076b1caa9834d04f42615b8226a605d"</string>
 		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
@@ -219,14 +228,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XsdqzWa8murzXo6vzKtrGeEcwqfDeHBObbp7SdHbLWY=
+			ryVSTEliKGD1rvhXMeUCZBvh6q+NX/2tW5X4v72ycBk=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			11ITbW9fDrfg6pT/L1deneZ07dJh0+8YmYLZ7vtuEFs=
+			MBQd8uMuEXtkz8xwUbNCWEn13s59pW6oRSanHzV5f/c=
 			</data>
 		</dict>
 	</dict>

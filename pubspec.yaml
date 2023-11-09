@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  desktop_window: ^0.4.0
   data_table_2: ^2.5.8
   intl: ^0.18.1
   sqflite: ^2.3.0

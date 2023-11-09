@@ -35,7 +35,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     DatabaseHelper.getAllGames().then((value) {
       value == null ? chessGames = [] : chessGames = value;
-      
     });
 
     var bigDataTable = Padding(
@@ -90,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
               .map((chessGame) => DataRow2(
                       onSelectChanged: (value) {
                         controller.loadPGN(chessGame.moves);
-                        print(chessGame.moves);
+
                         moves = controller.getSan().cast<String>();
                         i = 0;
                         setState(() {
@@ -147,6 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
 
     var smallDataTable = DataTable2(
+        minWidth: 540,
         showCheckboxColumn: false,
         columnSpacing: 10,
         decoration: const BoxDecoration(color: Colors.white),
@@ -178,10 +178,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     cells: [
                       DataCell(
-                        // Text(DateFormat("yyyy.MM.dd")
-                        //     .format(DateTime.parse(chessGame.date))),
-                        Text(chessGame.date)
-                      ),
+                          // Text(DateFormat("yyyy.MM.dd")
+                          //     .format(DateTime.parse(chessGame.date))),
+                          Text(chessGame.date)),
                       DataCell(
                         Text(chessGame.white),
                       ),
@@ -204,13 +203,14 @@ class _HomeScreenState extends State<HomeScreen> {
             .toList());
 
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
-        foregroundColor: Colors.white,
-        backgroundColor: const Color.fromRGBO(119, 153, 84, 1),
-        title: const Text('Chess'),
-      ),
+      // appBar:
+      // AppBar(
+      //   centerTitle: false,
+      //   leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
+      //   foregroundColor: Colors.white,
+      //   backgroundColor: const Color.fromRGBO(119, 153, 84, 1),
+      //   title: const Text('Chess'),
+      // ),
       body: Container(
           color: const Color.fromRGBO(48, 46, 43, 1),
           child: Padding(
@@ -250,116 +250,112 @@ class _HomeScreenState extends State<HomeScreen> {
                   )
                 : Row(
                     children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            width: MediaQuery.of(context).size.height - 40 - 97,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(5),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(5),
+                                child: cbb.ChessBoard(
+                                  controller: controller,
+                                  boardColor: cbb.BoardColor.orange,
+                                  boardOrientation: cbb.PlayerColor.white,
+                                ),
                               ),
                             ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(5),
-                              child: cbb.ChessBoard(
-                                controller: controller,
-                                boardColor: cbb.BoardColor.orange,
-                                boardOrientation: cbb.PlayerColor.white,
-                              ),
+                            const SizedBox(
+                              height: 20,
                             ),
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              IconButton(
-                                  onPressed: () {
-                                    pgnstring = '';
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                IconButton(
+                                    onPressed: () {
+                                      pgnstring = '';
 
-                                    if (isGoingUp) {
-                                      i = i - 2;
-                                    }
-                                    if (i > moves.length - 1) {
-                                      i = moves.length - 1;
-                                    }
-                                    if (i < 0) {
-                                      i = 0;
-                                    }
-                                    for (int j = 0; j < i; j++) {
-                                      pgnstring = pgnstring + moves[j] + ' ';
-                                    }
-                                    setState(() {
-                                      if (i < 1) {
-                                        lastMoveTXT = '0.';
-                                      } else {
-                                        lastMoveTXT = moves[i - 1];
+                                      if (isGoingUp) {
+                                        i = i - 2;
                                       }
-                                    });
-
-                                    controller.loadPGN(pgnstring);
-
-                                    i--;
-
-                                    isGoingUp = false;
-                                  },
-                                  icon: const Icon(
-                                    Icons.arrow_left,
-                                    color: Colors.white54,
-                                  )),
-                              IconButton(
-                                  onPressed: () {
-                                    pgnstring = '';
-                                    if (!isGoingUp) {
-                                      i = i + 2;
-                                    }
-
-                                    if (i < 0) {
-                                      i = 0;
-                                    }
-                                    if (i > moves.length - 1) {
-                                      i = moves.length - 1;
-                                    }
-                                    for (int j = 0; j < i; j++) {
-                                      pgnstring = pgnstring + moves[j] + ' ';
-                                    }
-                                    setState(() {
-                                      if (i < 1) {
-                                        lastMoveTXT = '0.';
-                                      } else {
-                                        lastMoveTXT = moves[i - 1];
+                                      if (i > moves.length - 1) {
+                                        i = moves.length - 1;
                                       }
-                                    });
+                                      if (i < 0) {
+                                        i = 0;
+                                      }
+                                      for (int j = 0; j < i; j++) {
+                                        pgnstring = pgnstring + moves[j] + ' ';
+                                      }
+                                      setState(() {
+                                        if (i < 1) {
+                                          lastMoveTXT = '0.';
+                                        } else {
+                                          lastMoveTXT = moves[i - 1];
+                                        }
+                                      });
 
-                                    controller.loadPGN(pgnstring);
+                                      controller.loadPGN(pgnstring);
 
-                                    i++;
+                                      i--;
 
-                                    isGoingUp = true;
-                                  },
-                                  icon: const Icon(
-                                    Icons.arrow_right,
-                                    color: Colors.white54,
-                                  )),
-                              Text(
-                                lastMoveTXT,
-                                style: const TextStyle(color: Colors.white54),
-                              ),
-                              SizedBox(
-                                width: 20,
-                              ),
-                            ],
-                          )
-                        ],
+                                      isGoingUp = false;
+                                    },
+                                    icon: const Icon(
+                                      Icons.arrow_left,
+                                      color: Colors.white54,
+                                    )),
+                                IconButton(
+                                    onPressed: () {
+                                      pgnstring = '';
+                                      if (!isGoingUp) {
+                                        i = i + 2;
+                                      }
+
+                                      if (i < 0) {
+                                        i = 0;
+                                      }
+                                      if (i > moves.length - 1) {
+                                        i = moves.length - 1;
+                                      }
+                                      for (int j = 0; j < i; j++) {
+                                        pgnstring = pgnstring + moves[j] + ' ';
+                                      }
+                                      setState(() {
+                                        if (i < 1) {
+                                          lastMoveTXT = '0.';
+                                        } else {
+                                          lastMoveTXT = moves[i - 1];
+                                        }
+                                      });
+
+                                      controller.loadPGN(pgnstring);
+
+                                      i++;
+
+                                      isGoingUp = true;
+                                    },
+                                    icon: const Icon(
+                                      Icons.arrow_right,
+                                      color: Colors.white54,
+                                    )),
+                                Text(
+                                  lastMoveTXT,
+                                  style: const TextStyle(color: Colors.white54),
+                                ),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                       const SizedBox(
                         width: 10,
                       ),
-                      Expanded(
-                          child: Container(
+                      Container(
+                        width: MediaQuery.of(context).size.height,
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
@@ -408,8 +404,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                             endDate: 'r',
                                             link: 'r',
                                             rawPGN: 'r',
-                                            date: DateTime.now()
-                                                .toIso8601String(),
+                                            date: DateFormat("yyyy.MM.dd")
+                                                .format(DateTime.now()),
                                             white: 'John',
                                             whiteElo: 2350.toString(),
                                             black: 'Nick',
@@ -420,7 +416,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             timeControl: '',
                                           ),
                                         );
-                                        
+
                                         setState(() {
                                           DatabaseHelper.getAllGames()
                                               .then((value) {
@@ -526,7 +522,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ],
                         ),
-                      ))
+                      )
                     ],
                   ),
           )),

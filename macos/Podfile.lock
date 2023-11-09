@@ -1,4 +1,6 @@
 PODS:
+  - desktop_window (0.0.1):
+    - FlutterMacOS
   - FlutterMacOS (1.0.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -8,6 +10,7 @@ PODS:
     - FMDB (>= 2.7.5)
 
 DEPENDENCIES:
+  - desktop_window (from `Flutter/ephemeral/.symlinks/plugins/desktop_window/macos`)
   - FlutterMacOS (from `Flutter/ephemeral`)
   - sqflite (from `Flutter/ephemeral/.symlinks/plugins/sqflite/macos`)
 
@@ -16,12 +19,15 @@ SPEC REPOS:
     - FMDB
 
 EXTERNAL SOURCES:
+  desktop_window:
+    :path: Flutter/ephemeral/.symlinks/plugins/desktop_window/macos
   FlutterMacOS:
     :path: Flutter/ephemeral
   sqflite:
     :path: Flutter/ephemeral/.symlinks/plugins/sqflite/macos
 
 SPEC CHECKSUMS:
+  desktop_window: fb7c4f12c1129f947ac482296b6f14059d57a3c3
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   sqflite: a5789cceda41d54d23f31d6de539d65bb14100ea

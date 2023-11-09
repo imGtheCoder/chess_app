@@ -40,6 +40,13 @@
     },
     {
       "kind": "Import",
+      "name": "desktop_window",
+      "printedName": "desktop_window",
+      "declKind": "Import",
+      "moduleName": "chess_app"
+    },
+    {
+      "kind": "Import",
       "name": "sqflite",
       "printedName": "sqflite",
       "declKind": "Import",
@@ -232,6 +239,13 @@
     },
     {
       "kind": "Import",
+      "name": "desktop_window",
+      "printedName": "desktop_window",
+      "declKind": "Import",
+      "moduleName": "chess_app"
+    },
+    {
+      "kind": "Import",
       "name": "sqflite",
       "printedName": "sqflite",
       "declKind": "Import",
@@ -400,6 +414,13 @@
       "kind": "Import",
       "name": "_Concurrency",
       "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "chess_app"
+    },
+    {
+      "kind": "Import",
+      "name": "desktop_window",
+      "printedName": "desktop_window",
       "declKind": "Import",
       "moduleName": "chess_app"
     },

@@ -1,10 +1,16 @@
 import 'package:chess_app/Screens/chessboard.dart';
 import 'package:chess_app/Screens/home_screen.dart';
 import 'package:chess_app/Screens/home_screen_half.dart';
+import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
+  Size size = await DesktopWindow.getWindowSize();
+// setting min and max with the same size to prevent resizing
+  await DesktopWindow.setMinWindowSize(Size(880, 640));
+//await DesktopWindow.setMinWindowSize(Size(1080,540));
+//await DesktopWindow.setMaxWindowSize(Size(1080,540));
 }
 
 class MyApp extends StatelessWidget {
